@@ -1,0 +1,15 @@
+{
+  "name": "lidnight",
+  "description": "Lidnight for Claude Code: keep your Mac awake while Claude works, then let it sleep.",
+  "owner": {
+    "name": "Dawon Lee",
+    "url": "https://lidnight.app/en/"
+  },
+  "plugins": [
+    {
+      "name": "lidnight",
+      "source": "./",
+      "description": "Keep your Mac awake while Claude Code works (lid closed, on battery), then let it sleep."
+    }
+  ]
+}

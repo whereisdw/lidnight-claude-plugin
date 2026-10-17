@@ -1,0 +1,11 @@
+{
+  "name": "lidnight",
+  "displayName": "Lidnight — keep your Mac awake while Claude works",
+  "version": "0.1.0",
+  "description": "Keep a MacBook awake (lid closed, even on battery) while Claude Code works, then let it sleep when it's done. Slash commands and a skill that drive the Lidnight menu bar app, with plain caffeinate/pmset fallbacks.",
+  "author": { "name": "Dawon Lee", "url": "https://lidnight.app/en/" },
+  "homepage": "https://lidnight.app/en/",
+  "repository": "https://github.com/whereisdw/lidnight-claude-plugin",
+  "license": "MIT",
+  "keywords": ["macos", "sleep", "caffeinate", "lid-closed", "overnight", "battery", "menu-bar"]
+}
