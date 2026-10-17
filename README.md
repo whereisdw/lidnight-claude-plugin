@@ -23,6 +23,16 @@ Lidnight itself (free, Apple Silicon, macOS 13+): `brew install whereisdw/tap/li
 
 The `keep-awake` skill kicks in when you mention leaving a long task running, closing the lid, or "Your computer went to sleep mid-response".
 
+## What it runs
+
+Everything happens locally, only when you use a command or the skill applies:
+
+- `lidnight start | stop | status | doctor`: the Lidnight app's own CLI (installed from the app's settings)
+- `open -g "lidnight://..."`: the app's URL scheme, used when the CLI isn't on your PATH
+- `pmset -g` / `pmset -g assertions`: read-only checks of the current sleep state when Lidnight isn't installed
+
+The plugin has no hooks, no MCP servers and no network calls of its own, and it never runs `sudo` or changes power settings without asking you first.
+
 ## Why
 
 When a Mac sleeps mid-response, Claude Code drops the partial reply and later rewrites the whole turn, often with no prompt cache, which burns usage limits. Closing the lid on battery is worse: macOS ignores `caffeinate`, and `pmset disablesleep` stays on until you remember to undo it. Lidnight watches Claude Code's hooks so the Mac is awake exactly while work runs.
