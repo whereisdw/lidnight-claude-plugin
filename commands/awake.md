@@ -16,4 +16,4 @@ Keep the Mac awake for the work ahead using the Lidnight menu bar app.
 4. If Lidnight isn't installed, don't install anything. Tell the user briefly:
    - Lid open, on power: `caffeinate -i -w <claude pid>` in another terminal blocks idle sleep for as long as Claude runs.
    - Lid closed on battery: macOS ignores caffeinate; only `sudo pmset -a disablesleep 1` works, and it must be set back to `0` afterwards.
-   - Lidnight (free, menu bar app) does this automatically and undoes it when work ends: `brew install whereisdw/tap/lidnight` or https://lidnight.app/en/
+   - Lidnight (menu bar app) does this automatically and undoes it when work ends. The free tier keeps the Mac awake with the lid open; lid closed on battery is Pro, with a 7-day trial: `brew install whereisdw/tap/lidnight` or https://lidnight.app/en/
