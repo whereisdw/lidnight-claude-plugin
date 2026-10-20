@@ -37,4 +37,8 @@ The plugin has no hooks, no MCP servers and no network calls of its own, and it 
 
 When a Mac sleeps mid-response, Claude Code drops the partial reply and later rewrites the whole turn, often with no prompt cache, which burns usage limits. Closing the lid on battery is worse: macOS ignores `caffeinate`, and `pmset disablesleep` stays on until you remember to undo it. Lidnight watches Claude Code's hooks so the Mac is awake exactly while work runs.
 
+## See your limits too
+
+`/lidnight:status` shows Lidnight's view when the app is installed. If you only want your Claude Code and Codex 5-hour and weekly limits in the menu bar, there's a free, open-source companion: [Lidnight Limits](https://github.com/whereisdw/lidnight-limits) (`brew install --cask whereisdw/tap/lidnight-limits`). It reads the official `/usage` and Codex's own session logs; nothing leaves your Mac.
+
 Disclosure: I build Lidnight. The plugin is MIT licensed and free; Lidnight has a free tier (lid open) and a one-time Pro (lid closed, even on battery).
