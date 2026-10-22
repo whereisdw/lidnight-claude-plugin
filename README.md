@@ -41,4 +41,6 @@ When a Mac sleeps mid-response, Claude Code drops the partial reply and later re
 
 `/lidnight:status` shows Lidnight's view when the app is installed. If you only want your Claude Code and Codex 5-hour and weekly limits in the menu bar, there's a free, open-source companion: [Lidnight Limits](https://github.com/whereisdw/lidnight-limits) (`brew install --cask whereisdw/tap/lidnight-limits`). It reads the official `/usage` and Codex's own session logs; nothing leaves your Mac.
 
+For plain hook scripts without any app (answer `AskUserQuestion` from a hook, Stop notifications, ntfy phone push, caffeinate, leftover processes), see [claude-code-hooks-recipes](https://github.com/whereisdw/claude-code-hooks-recipes).
+
 Disclosure: I build Lidnight. The plugin is MIT licensed and free; Lidnight has a free tier (lid open) and a one-time Pro (lid closed, even on battery).
