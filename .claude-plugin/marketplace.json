@@ -9,7 +9,7 @@
     {
       "name": "lidnight",
       "source": "./",
-      "description": "Keep your Mac awake while Claude Code works (lid closed, on battery), then let it sleep."
+      "description": "Session receipt and usage-limits summary for Claude Code, plus keep-awake commands for the Lidnight Mac app (free with the lid open; lid closed is Pro)."
     }
   ]
 }
