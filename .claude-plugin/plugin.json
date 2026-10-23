@@ -2,7 +2,7 @@
   "name": "lidnight",
   "displayName": "Lidnight — keep your Mac awake while Claude works",
   "version": "0.2.0",
-  "description": "Slash commands for Claude Code on macOS: a session receipt (runtime, agents, leftover processes, token totals) and a usage-limits summary that work on their own, plus keep-awake commands that drive the Lidnight menu bar app (free with the lid open; lid closed is Pro, on battery or plugged in), with plain caffeinate/pmset fallbacks.",
+  "description": "Slash commands for Claude Code on macOS: a session receipt (runtime, sessions, leftover processes, token totals) and a usage-limits summary that work on their own, plus keep-awake commands that drive the Lidnight menu bar app (free with the lid open; lid closed is Pro, on battery or plugged in), with plain caffeinate/pmset fallbacks.",
   "author": {
     "name": "Dawon Lee",
     "url": "https://lidnight.app/en/"

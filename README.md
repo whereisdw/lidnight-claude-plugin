@@ -17,7 +17,7 @@ Lidnight itself is optional (Apple Silicon, macOS 13+): `brew install whereisdw/
 
 | Command | What it does | Needs the Lidnight app? |
 |---|---|---|
-| `/lidnight:receipt` | Session receipt: how long Claude Code has been running, `claude agents` summary, child processes this session left running, token totals from the latest transcript | No |
+| `/lidnight:receipt` | Session receipt: how long Claude Code has been running, `claude agents` session list, child processes this session left running, token totals from the latest transcript | No |
 | `/lidnight:limits` | Your Claude Code 5-hour and weekly usage in two lines | No |
 | `/lidnight:awake [auto\|timer N\|until\|keep]` | Start keeping the Mac awake. `auto` (default) stays awake while AI agents work and sleeps ~10 minutes after they go quiet | Optional: shows `caffeinate` / `pmset` options without it |
 | `/lidnight:status` | Is the Mac being kept awake? Runs `lidnight doctor` when something looks off | Optional: reads `pmset` without it |
@@ -68,7 +68,7 @@ Lidnight 앱은 선택입니다(Apple Silicon, macOS 13+): `brew install whereis
 
 | 명령 | 하는 일 | Lidnight 앱 필요? |
 |---|---|---|
-| `/lidnight:receipt` | 세션 영수증: Claude Code 실행 시간, `claude agents` 요약, 이 세션이 남긴 자식 프로세스, 최신 대화 기록의 토큰 합계 | 아니오 |
+| `/lidnight:receipt` | 세션 영수증: Claude Code 실행 시간, `claude agents` 세션 목록, 이 세션이 남긴 자식 프로세스, 최신 대화 기록의 토큰 합계 | 아니오 |
 | `/lidnight:limits` | Claude Code 5시간·주간 사용량을 두 줄로 | 아니오 |
 | `/lidnight:awake [auto\|timer N\|until\|keep]` | Mac 깨워 두기 시작. `auto`(기본)는 AI 에이전트가 일하는 동안 깨어 있다가 조용해지고 약 10분 뒤 재움 | 선택: 없으면 `caffeinate` / `pmset` 방법을 안내 |
 | `/lidnight:status` | Mac이 깨워져 있는지 확인. 이상하면 `lidnight doctor` 실행 | 선택: 없으면 `pmset`으로 확인 |
@@ -98,4 +98,4 @@ Mac이 응답 도중 잠들면 Claude Code는 받던 응답을 버리고 나중�
 
 앱 없이 쓰는 훅 스크립트(훅으로 `AskUserQuestion` 답하기, Stop 알림, ntfy 휴대폰 푸시, caffeinate, 남은 프로세스)는 [claude-code-hooks-recipes](https://github.com/whereisdw/claude-code-hooks-recipes)를 보세요.
 
-공개: 저는 Lidnight를 만듭니다. 플러그인은 MIT 라이선스로 무료이고, Lidnight는 무료(뚜껑 연 상태)와 1회 결제 Pro(뚜껑 닫힘, 배터리든 전원 연결이든)가 있습니다.
+이해관계 고지: 저는 Lidnight를 만듭니다. 플러그인은 MIT 라이선스로 무료이고, Lidnight는 무료(뚜껑 연 상태)와 1회 결제 Pro(뚜껑 닫힘, 배터리든 전원 연결이든)가 있습니다.

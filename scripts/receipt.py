@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Session receipt for Claude Code: runtime, agents, leftover child processes, token totals.
+"""Session receipt for Claude Code: runtime, sessions, leftover child processes, token totals.
 
 Read-only. Standard library only. No network, no sudo. Works on macOS and Linux.
 Usage: receipt.py [--pid CLAUDE_PID] [--projects-dir DIR]
@@ -206,7 +206,7 @@ def main():
         print(f"Started:  {first_ts} (first transcript entry)")
     print()
 
-    print("Agents:")
+    print("Sessions (claude agents):")
     summary = agents_summary()
     print("  " + summary.replace("\n", "\n  "))
     print()
@@ -235,7 +235,7 @@ def main():
         print(f"  output:         {totals['output_tokens']:,}")
         print(f"  cache write:    {totals['cache_creation_input_tokens']:,}")
         print(f"  cache read:     {totals['cache_read_input_tokens']:,}")
-        print(f"  total:          {total:,}")
+        print(f"  total:          {total:,} (incl. cache read)")
     else:
         print(f"  no transcript found under {args.projects_dir}")
     return 0

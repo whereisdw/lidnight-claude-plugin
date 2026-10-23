@@ -1,6 +1,6 @@
 ---
 description: Stop keeping the Mac awake now (Lidnight), and check nothing else is holding it awake
-allowed-tools: Bash(lidnight *), Bash(open -g lidnight://*), Bash(pmset -g*), Bash(pgrep *)
+allowed-tools: Bash(lidnight *), Bash(open -g lidnight://*), Bash(pmset -g*), Bash(pgrep *), Bash(grep *)
 ---
 
 Run `lidnight stop` (or `open -g "lidnight://stop"` if the command isn't on PATH), then `lidnight status` and report the result in one line.

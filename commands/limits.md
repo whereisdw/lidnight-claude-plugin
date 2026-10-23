@@ -5,7 +5,7 @@ allowed-tools: Bash(claude -p /usage*), Bash(ls /Applications/*), Bash(test *)
 
 Summarize the user's Claude Code usage limits in exactly two lines.
 
-1. Run `claude -p /usage --no-session-persistence --setting-sources ""` (add `timeout 60` in front if available).
+1. Run `claude -p /usage --no-session-persistence --setting-sources ""`.
 2. From its output, write:
    - `5-hour: <percent used> used, resets <time>`
    - `Weekly: <percent used> used, resets <time>`

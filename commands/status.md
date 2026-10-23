@@ -1,6 +1,6 @@
 ---
 description: Show whether this Mac is being kept awake, and check its health (Lidnight, or plain pmset)
-allowed-tools: Bash(lidnight *), Bash(pmset -g*), Bash(pgrep *)
+allowed-tools: Bash(lidnight *), Bash(pmset -g*), Bash(pgrep *), Bash(grep *)
 ---
 
 Run `lidnight status`. If the user asked for details or something looks wrong, also run `lidnight doctor` and summarize only the rows that are not OK.
