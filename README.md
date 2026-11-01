@@ -11,7 +11,7 @@ This plugin adds three slash commands and one skill that drive the [Lidnight](ht
 /plugin install lidnight@lidnight
 ```
 
-Lidnight itself (Apple Silicon, macOS 13+; free with the lid open, lid closed on battery is Pro with a 7-day trial): `brew install whereisdw/tap/lidnight` or https://lidnight.app/en/
+Lidnight itself (Apple Silicon, macOS 13+; free with the lid open, lid closed is Pro, with a free trial of 5 lid-closed runs or 14 days): `brew install whereisdw/tap/lidnight` or https://lidnight.app/en/
 
 ## Commands
 
